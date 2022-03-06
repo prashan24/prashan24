@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Localcoins - Sign In</title>
+    <meta name="title" Content="Localcoins - Sign In">
+    <meta name="description" content="LocalCoins is a p2p crypto exchange marketplace where people can trade crypto directly with each other.">
+    <meta name="keywords" content="crypto,cryptocurrency,crytocurrencies,exchange,cryptoexchange,bitcoin,etherium">
+    <link rel="shortcut icon" href="https://script.viserlab.com/localcoins/assets/images/logoIcon/favicon.png" type="image/x-icon">
+
+
+    <link rel="apple-touch-icon" href="https://script.viserlab.com/localcoins/assets/images/logoIcon/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Localcoins - Sign In">
+
+    <meta itemprop="name" content="Localcoins - Sign In">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="https://script.viserlab.com/localcoins/assets/images/seo/618a4786a490d1636452230.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LocalCoins - Ultimate Peer to Peer Crypto Exchange Platform">
+    <meta property="og:description" content="LocalCoins is a p2p crypto exchange marketplace where people can trade crypto directly with each other.">
+    <meta property="og:image" content="https://script.viserlab.com/localcoins/assets/images/seo/618a4786a490d1636452230.png"/>
+    <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:url" content="https://script.viserlab.com/localcoins/login">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+   <!-- bootstrap 4  -->
+   <link rel="stylesheet" href="https://script.viserlab.com/localcoins/assets/templates/basic/css/vendor/bootstrap.min.css">
+    <!-- dashdoard main css -->
+    <link rel="stylesheet" href="https://script.viserlab.com/localcoins/assets/templates/basic/css/main.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="https://script.viserlab.com/localcoins/assets/templates/basic/css/custom.css">
+    <!-- site color -->
+    <link rel="stylesheet" href="https://script.viserlab.com/localcoins/assets/templates/basic/css/color.php?color1=2ebe2f">
+
+    </head>
+<body>
+
+
+
+    <div class="preloader">
+    <div class="preloader-container">
+        <span class="animated-preloader"></span>
+    </div>
+</div>
+
+    <div class="page-wrapper">
+
+    <section class="account-section">
+        <div class="left">
+          <div class="line-bg">
+            <img src="https://script.viserlab.com/localcoins/assets/templates/basic/images/line-bg.png" alt="image">
+          </div>
+          <div class="account-form-area">
+            <div class="text-center">
+              <a href="https://script.viserlab.com/localcoins" class="account-logo"><img src="https://script.viserlab.com/localcoins/assets/images/logoIcon/logo.png" alt="image"></a>
+            </div>
+            <form class="mt-5" method="POST" action={% url 'Login' %} >
+              {% csrf_token %}
+                <input type="hidden" name="_token" value="5Vo2M2AEa7pJPZYwvUPkhHhhYcooRNZj9Mmq6PfQ">              <div class="form-group">
+                <label>Username or Email</label>
+                <input type="text" name="username" value="" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" required>
+              </div>
+                <button type="submit" class="cmn-btn w-100">Login Now</button>
+              </div>
+              <div class="row align-items-center mt-3">
+                  <div class="col-lg-6">
+                      <p>Haven't an account? <a href={% url 'Register' %} class="base--color">Signup now</a></p>
+                  </div>
+
+                    <div class="col-lg-6 text-lg-right">
+                      <a href="https://script.viserlab.com/localcoins/password/reset" class="mt-3 base--color">Forgot password?</a>
+                    </div>
+              </div>
+            </form>
+          </div>
+             <div class="right bg_img" data-background="https://script.viserlab.com/localcoins/assets/images/frontend/login/61893d85eee811636384133.jpg">
+            <div class="content text-center">
+            <h2 class="text-white mb-4">Welcome Back!!</h2>
+            <p class="text-white">Login with Bitcoinvio helps you with trade bitcoin more easy and secure way throughout the world.</p>
+          </div>
+        </div>
+    </section>
+    </div>
+
+    </div>
+
+
+ <!-- jQuery library -->
+ <script src="https://script.viserlab.com/localcoins/assets/global/js/jquery-3.6.0.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://script.viserlab.com/localcoins/assets/templates/basic/js/vendor/bootstrap.bundle.min.js"></script>
+<!-- slick slider js -->
+<script src="https://script.viserlab.com/localcoins/assets/templates/basic/js/vendor/slick.min.js"></script>
+<!-- scroll animation -->
+<script src="https://script.viserlab.com/localcoins/assets/templates/basic/js/vendor/wow.min.js"></script>
+<!-- dashboard custom js -->
+<script src="https://script.viserlab.com/localcoins/assets/templates/basic/js/main.js"></script>
+
+
+    <script>
+        "use strict";
+        function submitUserForm() {
+            var response = grecaptcha.getResponse();
+            if (response.length == 0) {
+                document.getElementById('g-recaptcha-error').innerHTML = '<span class="text-danger">Captcha field is required.</span>';
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+
+<link rel="stylesheet" href="https://script.viserlab.com/localcoins/assets/global/css/iziToast.min.css">
+<script src="https://script.viserlab.com/localcoins/assets/global/js/iziToast.min.js"></script>
+
+
+<script>
+    "use strict";
+    function notify(status, message) {
+        if(typeof message == 'string'){
+            iziToast[status]({
+                message: message,
+                position: "topRight"
+            });
+        }else{
+            $.each(message, function(i, val) {
+                iziToast[status]({
+                    message: val,
+                    position: "topRight"
+                });
+            });
+        }
+    }
+</script>
+
+
+<script>
+    (function ($) {
+        "use strict";
+        $(".langSel").on("change", function() {
+            window.location.href = "https://script.viserlab.com/localcoins/change/"+$(this).val() ;
+        });
+
+        $('.cookie').on('click',function () {
+
+            var url = "https://script.viserlab.com/localcoins/cookie-accept";
+
+            $.get(url,function(response){
+
+                if(response.success){
+                    notify('success',response.success);
+                    $('.cookie-remove').html('');
+                }
+            });
+        });
+
+        $('.cookie-close').on('click',function () {
+            $('.cookie-remove').html('');
+        });
+
+    })(jQuery);
+</script>
+
+<script>
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5fe0b9b2a8a254155ab5421d/1eq2tap1m';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+
+<script>
+    adroll_adv_id = "YXRNNTO7ZBAMFBH67UUE5M";
+    adroll_pix_id = "MMQQDWGN25EXPHGRPA3NLR";
+    adroll_version = "2.0";
+    (function(w, d, e, o, a) {
+        w.__adroll_loaded = true;
+        w.adroll  = w.adroll  || [];
+        w.adroll.f = [ 'setProperties', 'identify', 'track' ];
+        var roundtripUrl = "https://s.adroll.com/j/" + adroll_adv_id
+                + "/roundtrip.js";
+        for (a = 0; a < w.adroll.f.length; a++) {
+            w.adroll[w.adroll.f[a]] = w.adroll[w.adroll.f[a]] || (function(n) {
+                return function() {
+                    w.adroll.push([ n, arguments ])
+                }
+            })(w.adroll.f[a])
+        }
+        e = d.createElement('script');
+        o = d.getElementsByTagName('script')[0];
+        e.async  = 1;
+        e.src  = roundtripUrl;
+        o.parentNode.insertBefore(e, o);
+    })(window, document);
+    adroll.track("pageView");
+</script>
+</body>
+</html>
